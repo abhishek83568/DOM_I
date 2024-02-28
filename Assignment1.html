@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="input1" type="number" placeholder="enter 1st Number" value="" />
+    <input id="input2" type="number" placeholder="enter 2nd Number" value="" />
+    <button onclick="addition()">Add</button>
+    <button onclick="subtract()">Subtract</button>
+    <button onclick="multiply()">Multiply</button>
+    <button onclick="division()">Divide</button>
+  </body>
+</html>
+<script>
+  function addition() {
+    let input1 = parseInt(document.getElementById("input1").value);
+    let input2 = parseInt(document.getElementById("input2").value);
+
+    alert(input1 + input2);
+  }
+
+  function subtract() {
+    let input1 = parseInt(document.getElementById("input1").value);
+    let input2 = parseInt(document.getElementById("input2").value);
+    let ans = input1 - input2;
+    alert(ans);
+  }
+
+  function multiply() {
+    let input1 = parseInt(document.getElementById("input1").value);
+    let input2 = parseInt(document.getElementById("input2").value);
+    let ans = input1 * input2;
+    alert(ans);
+  }
+
+  function division() {
+    let input1 = parseInt(document.getElementById("input1").value);
+    let input2 = parseInt(document.getElementById("input2").value);
+    let ans = input1 / input2;
+    alert(ans);
+  }
+</script>
